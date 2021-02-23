@@ -1,11 +1,12 @@
 import spacy
+import en_core_web_md
 import pandas as pd
 from gensim.summarization import summarize
 import streamlit as st 
 import spacy_streamlit
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
-nlp = spacy.load("en_core_web_sm")
+nlp = en_core_web_md.load()
 
 st.set_page_config("NLP Basics")
 with st.sidebar:

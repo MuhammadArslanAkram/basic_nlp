@@ -5,7 +5,7 @@ import streamlit as st
 import spacy_streamlit
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
-nlp = spacy.load("en")
+nlp = spacy.load("en_core_web_sm")
 
 st.set_page_config("NLP Basics")
 with st.sidebar:

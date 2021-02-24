@@ -3,9 +3,11 @@ import pandas as pd
 from gensim.summarization import summarize
 import streamlit as st 
 import spacy_streamlit
+import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 nlp = spacy.load("en_core_web_sm")
+nltk.download("vader_lexicon")
 
 st.set_page_config("NLP Basics")
 with st.sidebar:
